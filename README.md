@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [FrontendMentor Solution](https://www.frontendmentor.io/solutions/easybank-landing-page-R1udk3DYcM)
+- [Live Site](https://bt-easybank-landing-page.netlify.app/)
 
 ## My process
 
