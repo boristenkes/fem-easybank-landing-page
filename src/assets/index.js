@@ -20,7 +20,7 @@ import logo from './logo.svg';
 
 export const bg = {
     intro: {
-        dekstop: bgIntroDeskop,
+        desktop: bgIntroDeskop,
         mobile: bgIntroMobile,
     }
 }

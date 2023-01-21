@@ -19,14 +19,17 @@ const Nav = ({ className }) => (
   </nav>
 );
 
+// TODO: Add hover animation on nav links
 const Navbar = () => {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className='shadow-nav z-100 py-5'>
+    <section className='shadow-nav z-100 py-5 bg-neutral-100'>
       <div className='nav-wrapper container flex justify-between items-center font-nav'>
-        <Logo />
+        <a href="#">
+          <Logo />
+        </a>
 
         {isDesktop
           ? <Nav className='flex z-[1] gap-10 text-neutral-400' />

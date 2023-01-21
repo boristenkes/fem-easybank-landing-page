@@ -4,15 +4,15 @@ import { Button } from '../../components';
 import { images, bg } from '../../assets';
 import './Header.scss';
 
+// TODO: Fix image on mobile
 const Header = () => {
   return (
-    <header className='container even-columns md:!flex-row !flex-col-reverse'>
-      
+    <header className='container even-columns relative md:!flex-row !flex-col-reverse'>  
       <div>
         <h1 className="headtext">
           Next generation<br />digital banking
         </h1>
-        
+
         <p className="body-text">
           Take your financial life online. Your Easybank account will be a one-stop-shop 
           for spending, saving, budgeting, investing, and much more.
@@ -21,9 +21,15 @@ const Header = () => {
         <Button className='md:mx-0 mx-auto'>Request Invite</Button>
       </div>
 
-      <div className='relative'>
-        <img src={images.mockups} alt="" />
-        <img className='absolute top-0 right-0 z-[-1] w-full h-full' src={bg.intro.mobile} alt="" />
+      <div>
+        <img className='w-full aspect-square object-contain -translate-y-[100px] -z-10 relative' src={images.mockups} alt="Preview of app" />
+        <picture>
+          <source 
+            media='(min-width: 768px)'
+            srcSet={bg.intro.desktop}
+          />
+          <img className='absolute md:-top-[41%] top-0 md:-right-[25%] right-0 -z-20 w-[1000px] aspect-square object-contain' src={bg.intro.mobile} alt="" />
+        </picture>
       </div>
     </header>
   )

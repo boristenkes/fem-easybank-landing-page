@@ -12,6 +12,15 @@ const Button = styled.a`
   width: fit-content;
   border-radius: 100vw;
   cursor: pointer;
+  transition: transform 80ms ease-in-out;
+  user-select: none;
+
+  &:hover {
+    background-image: linear-gradient(to left, var(--clr-accent-200), var(--clr-primary-200));
+  }
+  &:active {
+    transform: scale(.97);
+  }
 `;
 
 export default Button
