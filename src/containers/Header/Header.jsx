@@ -2,9 +2,7 @@ import React from 'react'
 
 import { Button } from '../../components';
 import { images, bg } from '../../assets';
-import './Header.scss';
 
-// TODO: Fix image on mobile
 const Header = () => {
   return (
     <header className='container even-columns relative md:!flex-row !flex-col-reverse'>  
@@ -22,7 +20,7 @@ const Header = () => {
       </div>
 
       <div>
-        <img className='w-full aspect-square object-contain -translate-y-[100px] -z-10 relative' src={images.mockups} alt="Preview of app" />
+        <img className='w-screen aspect-square object-contain -translate-y-[100px] -z-10 relative' src={images.mockups} alt="Preview of app" />
         <picture>
           <source 
             media='(min-width: 768px)'

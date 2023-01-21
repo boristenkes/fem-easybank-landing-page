@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import './About.scss';
 import { features } from '../../constants';
 
 const FeatureCard = styled.li`

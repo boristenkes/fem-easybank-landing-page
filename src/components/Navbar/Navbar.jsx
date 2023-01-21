@@ -1,17 +1,15 @@
 import React, { useState } from 'react'
 
-import './Navbar.scss';
 import { Logo, Button } from '../../components';
 import { navLinks } from '../../constants';
 import { useMediaQuery } from 'react-responsive';
 import { Spin as Hamburger } from 'hamburger-react'
-import { stack as Menu } from 'react-burger-menu';
 
 const Nav = ({ className }) => (
   <nav>
     <ul className={className}>
       {navLinks.map((navLink, index) => (
-        <li className='fw-regular hover:text-neutral-500 nav-item' key={`navLink-${index + 1}`}>
+        <li className='py-7 border-b-4 border-b-transparent transition-border-b duration-500 hover:border-b-[var(--clr-primary-400)] fw-regular hover:text-neutral-500 nav-item hover:' key={`nav-link-${index + 1}`}>
           <a href={navLink.link}>{navLink.title}</a>
         </li>
       ))}
@@ -19,13 +17,12 @@ const Nav = ({ className }) => (
   </nav>
 );
 
-// TODO: Add hover animation on nav links
 const Navbar = () => {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className='shadow-nav z-100 py-5 bg-neutral-100'>
+    <section className='shadow-nav z-100 bg-neutral-100'>
       <div className='nav-wrapper container flex justify-between items-center font-nav'>
         <a href="#">
           <Logo />
@@ -33,9 +30,9 @@ const Navbar = () => {
 
         {isDesktop
           ? <Nav className='flex z-[1] gap-10 text-neutral-400' />
-          : <Nav className={`flex z-[1] flex-col fixed top-0 right-0 p-20 bg-neutral-200 drop-shadow-xl 
-                             transition-transform duration-500 ${!isOpen && 'translate-x-[100%]'} 
-                             h-[100vh] gap-10 text-neutral-400 before:content-none before:absolute before:inset-0 before:bg-primary-500`}/>}
+          : <Nav className={`flex z-[1] flex-col text-center fixed top-[15%] right-1/2 translate-x-1/2 p-10 rounded-lg 
+                           bg-neutral-200 shadow-nav-mobile transition-transform duration-500 ${!isOpen && '-translate-y-[200%]'}
+                             w-[min(500px,_90%)] mx-auto gap-6 text-xl text-neutral-500`} />}
 
         {isDesktop
           ? <Button>Request Invite</Button>

@@ -1,6 +1,5 @@
 import React from 'react'
 
-import './Footer.scss';
 import { Logo, Button } from '../../components';
 import { socialIcons, footerLinks } from '../../constants';
 
