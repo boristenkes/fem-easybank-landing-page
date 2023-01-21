@@ -1,4 +1,5 @@
 import { icons, images } from '../assets';
+import { FaFacebookSquare, FaYoutube, FaTwitter, FaPinterest, FaInstagram } from 'react-icons/fa';
 
 export const navLinks = [
     {
@@ -75,23 +76,23 @@ export const articles = [
 
 export const socialIcons = [
     {
-        icon: icons.facebook,
+        icon: <FaFacebookSquare />,
         link: 'https://www.facebook.com/',
     },
     {
-        icon: icons.youtube,
+        icon: <FaYoutube />,
         link: 'https://www.youtube.com/',
     },
     {
-        icon: icons.twitter,
+        icon: <FaTwitter />,
         link: 'https://www.twitter.com/',
     },
     {
-        icon: icons.pinterest,
+        icon: <FaPinterest />,
         link: 'https://www.pinterest.com/',
     },
     {
-        icon: icons.instagram,
+        icon: <FaInstagram />,
         link: 'https://www.instagram.com/',
     },
 ];
