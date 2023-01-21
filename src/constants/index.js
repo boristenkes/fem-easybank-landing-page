@@ -21,6 +21,10 @@ export const navLinks = [
         title: 'Careers',
         link: '#careers',
     },
+    {
+        title: 'Facebook',
+        link: 'https://facebook.com/',
+    },
 ];
 
 export const features = [

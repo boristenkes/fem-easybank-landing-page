@@ -1,15 +1,15 @@
 @use '../abstracts/' as *;
 
 .container {
-    max-width: var(--width, var(--container-width));
-    padding: 15px;
+    max-width: var(--width, 1200px);
+    padding-inline: 15px;
     margin-inline: auto;
 }
 
 .even-columns {
     @include flex(center, space-between, column);
     
-    @include mq(phone-small) {
+    @include mq('phone-small') {
         @include flex(space-between, center);
     }
 

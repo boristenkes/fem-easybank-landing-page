@@ -12,5 +12,4 @@
     @each $label, $family in $fontFamilies {
         --ff-#{$label}: #{$family};
     }
-    --container-width: 1200px;
 }
