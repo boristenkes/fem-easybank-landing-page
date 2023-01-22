@@ -8,7 +8,7 @@ const Header = () => {
     <header className='container even-columns relative md:!flex-row !flex-col-reverse'>  
       <div>
         <h1 className="headtext">
-          Next generation<br />digital banking
+          Next generation<br className='md:block hidden' /> digital banking
         </h1>
 
         <p className="body-text">

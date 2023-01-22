@@ -9,7 +9,7 @@ const Nav = ({ className }) => (
   <nav>
     <ul className={className}>
       {navLinks.map((navLink, index) => (
-        <li className='py-7 border-b-4 border-b-transparent transition-border-b duration-500 hover:border-b-[var(--clr-primary-400)] fw-regular hover:text-neutral-500 nav-item hover:' key={`nav-link-${index + 1}`}>
+        <li className='py-1 md:py-7 w-fit mx-auto border-b-4 border-b-transparent transition-border-b duration-500 hover:border-b-[var(--clr-primary-400)] fw-regular hover:text-neutral-500 nav-item hover:' key={`nav-link-${index + 1}`}>
           <a href={navLink.link}>{navLink.title}</a>
         </li>
       ))}
