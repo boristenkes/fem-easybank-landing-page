@@ -6,7 +6,7 @@ import { images, bg } from '../../assets';
 const Header = () => {
   return (
     <header className='container even-columns relative md:!flex-row !flex-col-reverse'>  
-      <div>
+      <div className='order-1 md:order-[unset]'>
         <h1 className="headtext">
           Next generation<br className='md:block hidden' /> digital banking
         </h1>

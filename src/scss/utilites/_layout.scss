@@ -7,13 +7,11 @@
 }
 
 .even-columns {
-    @include flex(center, space-between, column);
-    
-    @include mq('phone-small') {
-        @include flex(space-between, center);
-    }
+    display: grid;
+    align-items: center;
 
-    & > * {
-        flex: 1;
+    @include mq('tablet') {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
     }
 }
