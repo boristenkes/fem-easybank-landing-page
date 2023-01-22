@@ -43,7 +43,7 @@ const About = () => {
         {features.map((feature, index) => (
           <FeatureCard className='' key={`feature-${index+1}`}>
             <img className='mx-auto md:mx-0' src={feature.icon} alt={feature.title} />
-            <h3 className='headtext'>{feature.title}</h3>
+            <h2 className='headtext !text-xl'>{feature.title}</h2>
             <p className='body-text'>{feature.content}</p>
           </FeatureCard>
         ))}

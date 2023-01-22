@@ -16,7 +16,7 @@ const Header = () => {
           for spending, saving, budgeting, investing, and much more.
         </p>
         
-        <Button className='md:mx-0 mx-auto'>Request Invite</Button>
+        <Button href='#' className='md:mx-0 mx-auto'>Request Invite</Button>
       </div>
 
       <div>

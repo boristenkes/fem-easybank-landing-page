@@ -5,7 +5,7 @@ import { socialIcons, footerLinks } from '../../constants';
 
 const Footer = () => {
   return (
-    <footer className='bg-neutral-500 py-10 mt-20'>
+    <footer className='bg-neutral-600 py-10 mt-20'>
       
       <div className="footer-wrapper w-full flex md:flex-row flex-col items-center md:items-stretch justify-between container">
         <div className='flex justify-between flex-col'>
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div className='flex flex-col gap-8 md:gap-0 items-center md:items-end justify-between'>
-          <Button>Request Invite</Button>
+          <Button href='#'>Request Invite</Button>
 
           <p className='text-neutral-400 fw-regular'>&copy; Easybank. All Rights Reserved</p>
         </div>

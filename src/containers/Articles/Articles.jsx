@@ -16,9 +16,9 @@ const Articles = () => {
                 <p className='content-["By_"attr(data-author)] block text-xs text-neutral-400 mb-2'>
                   By {article.author}
                 </p>
-                <h3 className='headtext !text-xl !text-left mb-2 hover:text-primary-400 cursor-pointer'>
+                <h2 className='headtext !text-xl !text-left mb-2 hover:text-primary-400 cursor-pointer'>
                   {article.title}
-                </h3>
+                </h2>
                 <p className='body-text !text-left !m-0 lg:text-sm'>
                   {article.content}
                 </p>

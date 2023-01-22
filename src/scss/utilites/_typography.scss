@@ -4,7 +4,7 @@
     font-size: 4rem;
     font-family: var(--ff-headtext);
     font-weight: var(--fw-thin);
-    color: var(--clr-neutral-500);
+    color: var(--clr-neutral-600);
 
     @include mq('tablet', max) {
         text-align: center;
@@ -13,7 +13,7 @@
 }
 
 .body-text {
-    color: var(--clr-neutral-400);
+    color: var(--clr-neutral-500);
     font-weight: var(--fw-regular);
     max-width: min(500px, 90%);
     margin-block: 1rem 2rem;

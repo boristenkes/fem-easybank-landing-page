@@ -29,13 +29,13 @@ const Navbar = () => {
         </a>
 
         {isDesktop
-          ? <Nav className='flex z-[1] gap-10 text-neutral-400' />
+          ? <Nav className='flex z-[1] gap-10 text-neutral-500' />
           : <Nav className={`flex z-[1] flex-col text-center fixed top-[15%] right-1/2 translate-x-1/2 p-10 rounded-lg 
                            bg-neutral-200 shadow-nav-mobile transition-transform duration-500 ${!isOpen && '-translate-y-[200%]'}
                              w-[min(500px,_90%)] mx-auto gap-6 text-xl text-neutral-500`} />}
 
         {isDesktop
-          ? <Button>Request Invite</Button>
+          ? <Button href='#'>Request Invite</Button>
           : <Hamburger label='Show menu' distance='sm' duration={.5} size={25} direction='right' toggled={isOpen} toggle={setOpen} />
           }
       </div>

@@ -29,6 +29,9 @@ module.exports = {
           500: 'hsl(233, 26%, 24%)',
         }
       },
+      backgroundImage: {
+        navHover: 'linear-gradient(to right, var(--clr-primary-400, var(--clr-accent-400)))'
+      },
       fontFamily: {
         primary: ['Public Sans', 'sans-serif'],
         nav: ['Public Sans', 'sans-serif'],
