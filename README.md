@@ -36,14 +36,12 @@ Users should be able to:
 
 ### Built with
 
-- React
-- Tailwind
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Tailwind](https://tailwindcss.com/) - CSS framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Styled Components](https://styled-components.com/)
 - [Sass](https://sass-lang.com/) - CSS pre-processor
 - [Vite](https://vitejs.dev/) - Project management
 
