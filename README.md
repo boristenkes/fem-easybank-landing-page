@@ -43,7 +43,7 @@ Users should be able to:
 - [Tailwind](https://tailwindcss.com/) - CSS framework
 - [Styled Components](https://styled-components.com/)
 - [Sass](https://sass-lang.com/) - CSS pre-processor
-- [Vite](https://vitejs.dev/) - Project management
+- [Vite](https://vitejs.dev/) - Build Tool
 
 ### What I learned
 
